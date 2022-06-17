@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTES SCREEN"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemsList"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="55dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="70dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addNoteBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/teal_200"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Add Note"/>
+
+
+</FrameLayout>
